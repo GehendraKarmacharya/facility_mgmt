@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.gehendra.dao.BusinessUnitUseDao;
-import com.gehendra.model.BusinessUnit;
 import com.gehendra.model.BusinessUnitUse;
 
 @Repository

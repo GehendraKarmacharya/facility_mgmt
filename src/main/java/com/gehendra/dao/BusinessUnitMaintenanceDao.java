@@ -8,6 +8,6 @@ public interface BusinessUnitMaintenanceDao {
 	public void add(BusinessUnitMaintenance BusinessUnitMaintenance);
 	public void update(BusinessUnitMaintenance BusinessUnitMaintenance);
 	public void delete(int ID);
-	public BusinessUnitMaintenance getBusinessUnit(int ID);
-	public List getAllBusinessUnitMaintenance();
+	public BusinessUnitMaintenance getRequestedBusinessUnit(int ID);
+	public List getAllRequestedBusinessUnitMaintenance();
 }
