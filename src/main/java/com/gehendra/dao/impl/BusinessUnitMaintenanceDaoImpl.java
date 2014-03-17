@@ -30,11 +30,11 @@ public class BusinessUnitMaintenanceDaoImpl implements
 
 	@Override
 	public void delete(int ID) {
-		session.getCurrentSession().delete(getRequestedBusinessUnit(ID));
+		session.getCurrentSession().delete(getRequestedBusinessUnitMaintenance(ID));
 	}
 
 	@Override
-	public BusinessUnitMaintenance getRequestedBusinessUnit(int ID) {
+	public BusinessUnitMaintenance getRequestedBusinessUnitMaintenance(int ID) {
 		return (BusinessUnitMaintenance)session.getCurrentSession().get(BusinessUnitMaintenance.class, ID);
 	}
 
