@@ -23,7 +23,7 @@ public class BusinessUnitServiceImpl implements BusinessUnitService {
 
 	@Transactional
 	public void edit(BusinessUnit BusinessUnit) {
-		BusinessUnitDao.edit(BusinessUnit);
+		BusinessUnitDao.update(BusinessUnit);
 
 	}
 
