@@ -1,5 +1,13 @@
 package com.gehendra.dao;
 
-public interface BusinessUnitMaintenanceDao {
+import java.util.List;
 
+import com.gehendra.model.BusinessUnitMaintenance;
+
+public interface BusinessUnitMaintenanceDao {
+	public void add(BusinessUnitMaintenance BusinessUnitMaintenance);
+	public void update(BusinessUnitMaintenance BusinessUnitMaintenance);
+	public void delete(int ID);
+	public BusinessUnitMaintenance getBusinessUnit(int ID);
+	public List getAllBusinessUnitMaintenance();
 }

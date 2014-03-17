@@ -18,13 +18,11 @@ public class BusinessUnitDaoImpl implements BusinessUnitDao {
 	@Override
 	public void add(BusinessUnit BusinessUnit) {
 		session.getCurrentSession().save(BusinessUnit);
-
 	}
 
 	@Override
-	public void edit(BusinessUnit BusinessUnit) {
+	public void update(BusinessUnit BusinessUnit) {
 		session.getCurrentSession().update(BusinessUnit);
-
 	}
 
 	@Override

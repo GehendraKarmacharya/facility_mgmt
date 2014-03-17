@@ -6,7 +6,7 @@ import com.gehendra.model.BusinessUnit;
 
 public interface BusinessUnitDao {
 	public void add(BusinessUnit BusinessUnit);
-	public void edit(BusinessUnit BusinessUnit);
+	public void update(BusinessUnit BusinessUnit);
 	public void delete(int ID);
 	public BusinessUnit getBusinessUnit(int ID);
 	public List getAllBusinessUnit();
