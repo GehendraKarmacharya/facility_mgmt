@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Rent</h1>
-<form:form action="USER.do" method="POST" commandName="USER">
+<form:form action="BusinessUnitUse.do" method="POST" commandName="BusinessUnitUse">
 	<table>
 		<tr>
 			<td>Rent ID</td>
@@ -75,17 +75,17 @@
 		<td>Security Deposit</td>
 		<td>Utilities</td>
 	</tr>
-	<c:forEach items="${USERList}" var="USER">
+	<c:forEach items="${BusinessUnitUseList}" var="BusinessUnitUse">
 		<tr>
-			<td>${USER.USE_ID}</td>
-			<td>${USER.BUSINESS_UNIT_ID}</td>
-			<td>${USER.IS_RENEW}</td>
-			<td>${USER.USER_ID}</td>
-			<td>${USER.LEASE_START_DATE}</td>
-			<td>${USER.LEASE_END_DATE}</td>
-			<td>${USER.RENT}</td>
-			<td>${USER.SECURITY_DEPOSIT}</td>
-			<td>${USER.UTILIITES}</td>
+			<td>${BusinessUnitUse.USE_ID}</td>
+			<td>${BusinessUnitUse.BUSINESS_UNIT_ID}</td>
+			<td>${BusinessUnitUse.IS_RENEW}</td>
+			<td>${BusinessUnitUse.USER_ID}</td>
+			<td>${BusinessUnitUse.LEASE_START_DATE}</td>
+			<td>${BusinessUnitUse.LEASE_END_DATE}</td>
+			<td>${BusinessUnitUse.RENT}</td>
+			<td>${BusinessUnitUse.SECURITY_DEPOSIT}</td>
+			<td>${BusinessUnitUse.UTILIITES}</td>
 		</tr>
 	</c:forEach>
 </table>
