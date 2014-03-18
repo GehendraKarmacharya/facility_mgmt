@@ -82,7 +82,15 @@
 			<td>${USER.EMAIL}</td>
 			<td>${USER.TELEPHONE}</td>
 			<td>${USER.ADDRESS}</td>
-			<td>${USER.TYPE}</td>
+			<td>
+				if(${USER.TYPE}==1) {
+					"Teenant"
+				}
+				else {
+					"Employee"
+				}
+			
+			</td>
 			<td>${USER.SCHEDULE}</td>
 			<td>${USER.HOURLY_RATE}</td>
 		</tr>

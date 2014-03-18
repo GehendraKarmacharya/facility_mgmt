@@ -67,8 +67,22 @@
 			<td>${BusinessUnit.DESCRIPTION}</td>
 			<td>${BusinessUnit.LOCATION}</td>
 			<td>${BusinessUnit.ADDITIONAL_FEATURES}</td>
-			<td>${BusinessUnit.STATUS}</td>
-			<td>${BusinessUnit.IS_AVAILABLE}</td>
+			<td>
+				if(${BusinessUnit.STATUS}==1) {
+					"Unit is in working Condition"
+				}
+				else {
+					"Under Construction"
+				}
+			</td>
+			<td>
+				if(${BusinessUnit.IS_AVAILABLE} == 1) {
+					"Unit is available"
+				}
+				else {
+					"Its in use"
+				}
+			</td>
 		</tr>
 	</c:forEach>
 </table>
