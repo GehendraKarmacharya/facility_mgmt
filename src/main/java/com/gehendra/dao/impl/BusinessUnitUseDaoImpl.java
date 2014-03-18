@@ -30,6 +30,11 @@ public class BusinessUnitUseDaoImpl implements BusinessUnitUseDao {
 	public BusinessUnitUse getBusinessUnitUse(int ID) {
 		return (BusinessUnitUse)session.getCurrentSession().get(BusinessUnitUse.class, ID);
 	}
+	
+	@Override
+	public List getAllBusinessUnitUse() {
+		return session.getCurrentSession().createQuery("from BusinessUnitUse b").list();
+	}
 
 	@Override
 	public List BusinessUnitUseForSpecificDate(Date d1, Date d2) {

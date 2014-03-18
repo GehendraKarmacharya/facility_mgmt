@@ -28,7 +28,7 @@ public class BusinessUnitController {
 	@RequestMapping(value="/BusinessUnit.do", method=RequestMethod.POST)
 	public String doActions(@ModelAttribute BusinessUnit BusinessUnit, BindingResult result, @RequestParam String action, Map<String, Object> map){
 		BusinessUnit BusinessUnitResult = new BusinessUnit();
-		switch(action.toLowerCase()){	//only in Java7 you can put String in switch
+		switch(action.toLowerCase()){
 		case "add":
 			BusinessUnitService.add(BusinessUnit);
 			BusinessUnitResult = BusinessUnit;

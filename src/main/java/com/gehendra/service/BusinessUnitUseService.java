@@ -9,6 +9,7 @@ public interface BusinessUnitUseService {
 	public void add(BusinessUnitUse BusinessUnitUse);
 	public void update(BusinessUnitUse BusinessUnitUse);
 	public BusinessUnitUse getBusinessUnitUse(int ID);
+	public List getAllBusinessUnitUse();
 	public List BusinessUnitUseForSpecificDate(Date d1,Date d2);
 	public List BusinessUnitUseByPriceRange(float rate);
 }

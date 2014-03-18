@@ -32,6 +32,11 @@ public class BusinessUnitUseImpl implements BusinessUnitUseService {
 	public BusinessUnitUse getBusinessUnitUse(int ID) {
 		return BusinessUnitUseDao.getBusinessUnitUse(ID);
 	}
+	
+	@Transactional
+	public List getAllBusinessUnitUse() {
+		return BusinessUnitUseDao.getAllBusinessUnitUse();
+	}
 
 	@Transactional
 	public List BusinessUnitUseForSpecificDate(Date d1, Date d2) {
