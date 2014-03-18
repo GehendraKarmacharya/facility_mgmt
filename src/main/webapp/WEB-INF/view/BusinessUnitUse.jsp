@@ -20,7 +20,12 @@
 		</tr>
 		<tr>
 			<td>Renew/New</td>
-			<td><form:input path="IS_RENEW" /></td>
+			<td>
+				<form:select path="IS_RENEW">
+					<form:option value="0" label="No" />
+					<form:option value="1" label="Yes" />
+				</form:select>
+			</td>
 		</tr>
 		<tr>
 			<td>Tenant Name</td>

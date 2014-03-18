@@ -13,7 +13,7 @@ public class BusinessUnitUse {
 		@Id
 		@Column
 		@GeneratedValue(strategy=GenerationType.AUTO)
-		private int MAINTENANCE_ID;
+		private int USE_ID;
 		@Column
 		private int BUSINESS_UNIT_ID;
 		@Column
@@ -33,11 +33,11 @@ public class BusinessUnitUse {
 		
 		public BusinessUnitUse() {}
 		
-		public BusinessUnitUse(int MAINTENANCE_ID, int BUSINESS_UNIT_ID,
+		public BusinessUnitUse(int USE_ID, int BUSINESS_UNIT_ID,
 				int USER_ID, Date LEASE_START_DATE, Date LEASE_END_DATE,
 				int RENT, String SECURITY_DEPOSIT, float UTILIITES, int IS_RENEW) {
 			super();
-			this.MAINTENANCE_ID = MAINTENANCE_ID;
+			this.USE_ID = USE_ID;
 			this.BUSINESS_UNIT_ID = BUSINESS_UNIT_ID;
 			this.USER_ID = USER_ID;
 			this.LEASE_START_DATE = LEASE_START_DATE;
@@ -49,10 +49,10 @@ public class BusinessUnitUse {
 		}
 		
 		public int getMAINTENANCE_ID() {
-			return MAINTENANCE_ID;
+			return USE_ID;
 		}
-		public void setMAINTENANCE_ID(int MAINTENANCE_ID) {
-			this.MAINTENANCE_ID = MAINTENANCE_ID;
+		public void setMAINTENANCE_ID(int USE_ID) {
+			this.USE_ID = USE_ID;
 		}
 
 		public int getBUSINESS_UNIT_ID() {
