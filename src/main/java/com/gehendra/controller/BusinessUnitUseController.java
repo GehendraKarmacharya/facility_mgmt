@@ -23,7 +23,7 @@ public class BusinessUnitUseController {
 		BusinessUnitUse BusinessUnitUse = new BusinessUnitUse();
 		map.put("BusinessUnitUse", BusinessUnitUse);
 		map.put("BusinessUnitUseList", BusinessUnitUseService.getAllBusinessUnitUse());
-		return "BusinessUnit";
+		return "BusinessUnitUse";
 	}
 	@RequestMapping(value="/BusinessUnitUse.do", method=RequestMethod.POST)
 	public String doActions(@ModelAttribute BusinessUnitUse BusinessUnitUse, BindingResult result, @RequestParam String action, Map<String, Object> map){
